@@ -1,0 +1,52 @@
+﻿Testing Endpoint: http://localhost:8000/products ...
+  SUCCESS!
+  [OK] Returned exact count: 3
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/states ...
+  SUCCESS!
+  [OK] Returned exact count: 9
+  [OK] Validated keys present: ['id', 'name', 'image', 'shopping_hub_count']
+  [OK] Validated keys absent: ['_id']
+  Available states: ['Andhra Pradesh', 'Bihar', 'Karnataka', 'Kerala', 'Maharashtra', 'Rajasthan', 'Tamil Nadu', 'Telangana', 'Uttar Pradesh']
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs ...
+  SUCCESS!
+  [OK] Returned exact count: 14
+  [OK] Validated keys present: ['id', 'name', 'state', 'description', 'banner_image', 'categories', 'store_count', 'featured']
+  [OK] Validated keys absent: ['_id', 'region']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs?state=Telangana ...
+  SUCCESS!
+  [OK] Returned exact count: 3
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs?featured=true ...
+  SUCCESS!
+  [OK] Returned exact count: 9
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs/hyd ...
+  SUCCESS!
+  [OK] Validated keys present: ['id', 'name', 'cover_image', 'latitude', 'longitude', 'created_at']
+  [OK] Validated keys absent: ['_id', 'region']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs/hyd/stores ...
+  SUCCESS!
+  [OK] Returned exact count: 5
+  [OK] Validated keys present: ['_id', 'name', 'shopping_hub_id']
+  [OK] Validated keys absent: ['trust_score', 'google_rating', 'review_count']
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs?search=Hyd ...
+  SUCCESS!
+  [OK] Returned exact count: 1
+  [OK] Validated keys present: ['id', 'name']
+  [OK] Validated keys absent: ['_id', 'region']
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/shopping-hubs/search?query=vij ...
+  SUCCESS!
+  [OK] Returned exact count: 1
+  [OK] Validated keys present: ['id', 'name']
+  [OK] Validated keys absent: ['_id', 'region']
+  --------------------------------------
+
+ALL STATE-FIRST EXPLORATION AND SHOPPING HUB SERVICE VERIFICATIONS PASSED SUCCESSFULLY!
