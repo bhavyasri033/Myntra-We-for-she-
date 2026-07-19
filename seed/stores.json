@@ -19,7 +19,14 @@
         "banner_image": "https://example.com/banners/sism-hyd.png",
         "description": "Premium shopping destination in Hyderabad for silk sarees, designer ethnic garments, and family wedding selections.",
         "is_verified": true,
-        "shopping_hub_id": "hyd"
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=South%20India%20Shopping%20Mall",
+        "specialties": [
+            "Kanchipuram Silk",
+            "Wedding Collection",
+            "Handloom Sarees",
+            "Family Fashion"
+        ]
     },
     {
         "name": "RS Brothers",
@@ -41,7 +48,14 @@
         "banner_image": "https://example.com/banners/rs-hyd.png",
         "description": "Known as the household store of Hyderabad, RS Brothers offers extensive collections of silks and family fashion.",
         "is_verified": true,
-        "shopping_hub_id": "hyd"
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=RS%20Brothers",
+        "specialties": [
+            "Gadwal Sarees",
+            "Traditional Wear",
+            "Kids Festive",
+            "Mens Silk Dhoti"
+        ]
     },
     {
         "name": "Chandana Brothers",
@@ -62,7 +76,14 @@
         "banner_image": "https://example.com/banners/chandana-hyd.png",
         "description": "Decades of trust at Secunderabad, offering highly affordable handloom varieties and traditional festive wears.",
         "is_verified": true,
-        "shopping_hub_id": "hyd"
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Chandana%20Brothers",
+        "specialties": [
+            "Chikankari Suit Sets",
+            "Dharmavaram Silk",
+            "Daily Wear Cotton",
+            "Festive Collections"
+        ]
     },
     {
         "name": "KLM Fashion Mall",
@@ -83,7 +104,14 @@
         "banner_image": "https://example.com/banners/klm-hyd.png",
         "description": "Secunderabad's trendiest option for budget weddings, matching regional values with designer clothes.",
         "is_verified": true,
-        "shopping_hub_id": "hyd"
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=KLM%20Fashion%20Mall",
+        "specialties": [
+            "Organza Lehengas",
+            "Partywear Suits",
+            "Traditional Handlooms",
+            "Contemporary Wear"
+        ]
     },
     {
         "name": "Kalanjali",
@@ -104,7 +132,14 @@
         "banner_image": "https://example.com/banners/kalanjali-hyd.png",
         "description": "Part of the Margadarsi Group, Kalanjali showcases classical Indian arts, luxury handwoven sarees, and artifacts.",
         "is_verified": true,
-        "shopping_hub_id": "hyd"
+        "shopping_hub_id": "hyd",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Kalanjali",
+        "specialties": [
+            "Fine Handicrafts",
+            "Wedding Lehengas",
+            "Pure Silk Sarees",
+            "Handwoven Heritage"
+        ]
     },
     {
         "name": "CMR Heritage",
@@ -125,7 +160,14 @@
         "banner_image": "https://example.com/banners/cmr-war.png",
         "description": "Legacy of trust brought to Warangal, providing a grand shopping destination for festivals and weddings.",
         "is_verified": true,
-        "shopping_hub_id": "war"
+        "shopping_hub_id": "war",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=CMR%20Heritage",
+        "specialties": [
+            "Handloom Silk",
+            "Traditional Uppada",
+            "Grooms Wear",
+            "Banarasi Sarees"
+        ]
     },
     {
         "name": "Kalanikethan",
@@ -146,7 +188,14 @@
         "banner_image": "https://example.com/banners/kala-war.png",
         "description": "Established handloom weavers offering classical printed cottons and wedding silks in Warangal.",
         "is_verified": true,
-        "shopping_hub_id": "war"
+        "shopping_hub_id": "war",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Kalanikethan",
+        "specialties": [
+            "Pattu Sarees",
+            "Designer Salwars",
+            "Gadwal Silks",
+            "Exclusive Bridal"
+        ]
     },
     {
         "name": "Sri Vasavi Silks",
@@ -167,7 +216,14 @@
         "banner_image": "https://example.com/banners/vasavi-war.png",
         "description": "Warangal's popular silks store, best known for unique patterns directly sourced from weavers.",
         "is_verified": true,
-        "shopping_hub_id": "war"
+        "shopping_hub_id": "war",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Sri%20Vasavi%20Silks",
+        "specialties": [
+            "Pure Dharmavaram",
+            "Kanchi Pattu",
+            "Silk Brocades",
+            "Pujar Essentials"
+        ]
     },
     {
         "name": "Padmavathi Shopping Mall",
@@ -188,7 +244,13 @@
         "banner_image": "https://example.com/banners/padma-war.png",
         "description": "A family fashion hub located right next to the bus station for convenient travel-shoppers.",
         "is_verified": true,
-        "shopping_hub_id": "war"
+        "shopping_hub_id": "war",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Padmavathi%20Shopping%20Mall",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Sri Lakshmi Silks",
@@ -209,7 +271,13 @@
         "banner_image": "https://example.com/banners/lakshmi-karim.png",
         "description": "Highly trusted handloom dealer at Karimnagar's Tower Circle, catering to native weaving traditions.",
         "is_verified": true,
-        "shopping_hub_id": "karimnagar"
+        "shopping_hub_id": "karimnagar",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Sri%20Lakshmi%20Silks",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Vastra Trends",
@@ -230,7 +298,13 @@
         "banner_image": "https://example.com/banners/vastra-karim.png",
         "description": "Brings contemporary trends and modern fabrics together for Karimnagar's younger demography.",
         "is_verified": true,
-        "shopping_hub_id": "karimnagar"
+        "shopping_hub_id": "karimnagar",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Vastra%20Trends",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Venkateswara Textiles",
@@ -251,7 +325,13 @@
         "banner_image": "https://example.com/banners/venkat-karim.png",
         "description": "Specialists in pure cotton dhotis, matching unstitched matching materials, and uniform sets.",
         "is_verified": true,
-        "shopping_hub_id": "karimnagar"
+        "shopping_hub_id": "karimnagar",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Venkateswara%20Textiles",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "CMR Shopping Mall",
@@ -272,7 +352,13 @@
         "banner_image": "https://example.com/banners/cmr-vij.png",
         "description": "One of Andhra's premier shopping networks, housing classical handwoven silk ranges.",
         "is_verified": true,
-        "shopping_hub_id": "vij"
+        "shopping_hub_id": "vij",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=CMR%20Shopping%20Mall",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "KLM Fashion Mall",
@@ -293,7 +379,14 @@
         "banner_image": "https://example.com/banners/klm-vij.png",
         "description": "Vijayawada's trendiest collection store for budget and design conscious shoppers.",
         "is_verified": true,
-        "shopping_hub_id": "vij"
+        "shopping_hub_id": "vij",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=KLM%20Fashion%20Mall",
+        "specialties": [
+            "Organza Lehengas",
+            "Partywear Suits",
+            "Traditional Handlooms",
+            "Contemporary Wear"
+        ]
     },
     {
         "name": "Chandana Brothers",
@@ -314,7 +407,14 @@
         "banner_image": "https://example.com/banners/chandana-vij.png",
         "description": "Deeply trusted retail destination on Eluru Road, catering to rich regional silks and casual checks.",
         "is_verified": true,
-        "shopping_hub_id": "vij"
+        "shopping_hub_id": "vij",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Chandana%20Brothers",
+        "specialties": [
+            "Chikankari Suit Sets",
+            "Dharmavaram Silk",
+            "Daily Wear Cotton",
+            "Festive Collections"
+        ]
     },
     {
         "name": "Sri Krishna Silks",
@@ -335,7 +435,13 @@
         "banner_image": "https://example.com/banners/krishna-vij.png",
         "description": "Known for pure silk fabrics from Karnataka and authentic South Indian temple borders.",
         "is_verified": true,
-        "shopping_hub_id": "vij"
+        "shopping_hub_id": "vij",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Sri%20Krishna%20Silks",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "CMR Central",
@@ -357,7 +463,13 @@
         "banner_image": "https://example.com/banners/cmr-vizag.png",
         "description": "Visakhapatnam's flagship landmark, linking classical handlooms with global fashion under one roof.",
         "is_verified": true,
-        "shopping_hub_id": "vizag"
+        "shopping_hub_id": "vizag",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=CMR%20Central",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "KLM Fashion Mall",
@@ -378,7 +490,14 @@
         "banner_image": "https://example.com/banners/klm-vizag.png",
         "description": "Vizag's highly popular budget wedding venue, housing spectacular ready-mades.",
         "is_verified": true,
-        "shopping_hub_id": "vizag"
+        "shopping_hub_id": "vizag",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=KLM%20Fashion%20Mall",
+        "specialties": [
+            "Organza Lehengas",
+            "Partywear Suits",
+            "Traditional Handlooms",
+            "Contemporary Wear"
+        ]
     },
     {
         "name": "Varma Textiles",
@@ -399,7 +518,13 @@
         "banner_image": "https://example.com/banners/varma-vizag.png",
         "description": "Gajuwaka's favorite wholesale textile shop, highly trusted for daily cot and matching linens.",
         "is_verified": true,
-        "shopping_hub_id": "vizag"
+        "shopping_hub_id": "vizag",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Varma%20Textiles",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Chandana Brothers",
@@ -420,7 +545,14 @@
         "banner_image": "https://example.com/banners/chandana-vizag.png",
         "description": "Vizag's iconic shopping spot at Jagadamba center, famous for wedding packages and silks.",
         "is_verified": true,
-        "shopping_hub_id": "vizag"
+        "shopping_hub_id": "vizag",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Chandana%20Brothers",
+        "specialties": [
+            "Chikankari Suit Sets",
+            "Dharmavaram Silk",
+            "Daily Wear Cotton",
+            "Festive Collections"
+        ]
     },
     {
         "name": "The Chennai Silks",
@@ -441,7 +573,13 @@
         "banner_image": "https://example.com/banners/chennai-coim.png",
         "description": "The absolute benchmark in South Indian silk weaving, carrying authentic Coimbatore and Kanchi silks.",
         "is_verified": true,
-        "shopping_hub_id": "coimbatore"
+        "shopping_hub_id": "coimbatore",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=The%20Chennai%20Silks",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Pothys",
@@ -462,7 +600,13 @@
         "banner_image": "https://example.com/banners/pothys-coim.png",
         "description": "Renowned for its collection of Samudrika Pattu handloom wonders and traditional family shopping.",
         "is_verified": true,
-        "shopping_hub_id": "coimbatore"
+        "shopping_hub_id": "coimbatore",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Pothys",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "RMKV",
@@ -483,7 +627,13 @@
         "banner_image": "https://example.com/banners/rmkv-coim.png",
         "description": "Pioneers in innovative silk patterns, including reversible and multi-themed handloom garments.",
         "is_verified": true,
-        "shopping_hub_id": "coimbatore"
+        "shopping_hub_id": "coimbatore",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=RMKV",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Sri Kumaran Fashion",
@@ -504,7 +654,13 @@
         "banner_image": "https://example.com/banners/kumaran-coim.png",
         "description": "Gandhipuram's popular showroom for casual clothing, cotton textiles, and daily matching fabrics.",
         "is_verified": true,
-        "shopping_hub_id": "coimbatore"
+        "shopping_hub_id": "coimbatore",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Sri%20Kumaran%20Fashion",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Seematti",
@@ -525,7 +681,13 @@
         "banner_image": "https://example.com/banners/seematti-kochi.png",
         "description": "Led by Beena Kannan, Seematti has set Kochi's fashion design trends for past a century.",
         "is_verified": true,
-        "shopping_hub_id": "kochi"
+        "shopping_hub_id": "kochi",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Seematti",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Jayalakshmi Silks",
@@ -546,7 +708,13 @@
         "banner_image": "https://example.com/banners/jayalakshmi-kochi.png",
         "description": "An unmatched name in Kerala's bridal couture, offering gorgeous fabrics and ethnic selections.",
         "is_verified": true,
-        "shopping_hub_id": "kochi"
+        "shopping_hub_id": "kochi",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Jayalakshmi%20Silks",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Pothys",
@@ -567,7 +735,13 @@
         "banner_image": "https://example.com/banners/pothys-kochi.png",
         "description": "Pothys brings their grand traditional showroom collections to Palarivattom's shoppers.",
         "is_verified": true,
-        "shopping_hub_id": "kochi"
+        "shopping_hub_id": "kochi",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Pothys",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Milan Design",
@@ -588,7 +762,13 @@
         "banner_image": "https://example.com/banners/milan-kochi.png",
         "description": "High-end bespoke boutique catering to modern Keralite brides with customised, upscale embroidery.",
         "is_verified": true,
-        "shopping_hub_id": "kochi"
+        "shopping_hub_id": "kochi",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Milan%20Design",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Mysore Saree Udyog",
@@ -609,7 +789,13 @@
         "banner_image": "https://example.com/banners/msu-mys.png",
         "description": "Karnataka's landmark silk store, carrying pure crepe and printed handloom silks.",
         "is_verified": true,
-        "shopping_hub_id": "mysuru"
+        "shopping_hub_id": "mysuru",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Mysore%20Saree%20Udyog",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "KSIC Silk Showroom",
@@ -629,7 +815,13 @@
         "banner_image": "https://example.com/banners/ksic-mys.png",
         "description": "Government owned official KSIC Mysore Silk outlet, ensuring authentic pure gold thread zari validation.",
         "is_verified": true,
-        "shopping_hub_id": "mysuru"
+        "shopping_hub_id": "mysuru",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=KSIC%20Silk%20Showroom",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Prasiddhi Silks",
@@ -650,7 +842,14 @@
         "banner_image": "https://example.com/banners/prasiddhi-mys.png",
         "description": "Quality silks showroom packing classical handlooms and daily wear dress materials.",
         "is_verified": true,
-        "shopping_hub_id": "mysuru"
+        "shopping_hub_id": "mysuru",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Prasiddhi%20Silks",
+        "specialties": [
+            "Mysuru Silk",
+            "Printed Crepe",
+            "Art Silk",
+            "Office Wear Sarees"
+        ]
     },
     {
         "name": "Kayes Fashion",
@@ -671,7 +870,13 @@
         "banner_image": "https://example.com/banners/kayes-mys.png",
         "description": "Trendy lifestyle selections for students and family crowds visiting Mysore city.",
         "is_verified": true,
-        "shopping_hub_id": "mysuru"
+        "shopping_hub_id": "mysuru",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Kayes%20Fashion",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Dhantoli Fashion House",
@@ -692,7 +897,13 @@
         "banner_image": "https://example.com/banners/dhantoli-nag.png",
         "description": "Highly trusted boutique for designer ethnic wears and wedding sherwanis in Nagpur.",
         "is_verified": true,
-        "shopping_hub_id": "nagpur"
+        "shopping_hub_id": "nagpur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Dhantoli%20Fashion%20House",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Arvind Store",
@@ -713,7 +924,13 @@
         "banner_image": "https://example.com/banners/arvind-nag.png",
         "description": "Premium unstitched linen shirts matching custom suitings for corporate circles.",
         "is_verified": true,
-        "shopping_hub_id": "nagpur"
+        "shopping_hub_id": "nagpur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Arvind%20Store",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Cotton County",
@@ -734,7 +951,13 @@
         "banner_image": "https://example.com/banners/cotton-nag.png",
         "description": "Clean, affordable cotton apparel sets tailored for Nagpur's seasonal warm climate.",
         "is_verified": true,
-        "shopping_hub_id": "nagpur"
+        "shopping_hub_id": "nagpur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Cotton%20County",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Vastram",
@@ -755,7 +978,13 @@
         "banner_image": "https://example.com/banners/vastram-nag.png",
         "description": "Vastram is a family favorite for festive kurtas and silk sarees in Nagpur.",
         "is_verified": true,
-        "shopping_hub_id": "nagpur"
+        "shopping_hub_id": "nagpur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Vastram",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Rajasthali",
@@ -776,7 +1005,13 @@
         "banner_image": "https://example.com/banners/rajasthali-jai.png",
         "description": "Official Rajasthali craft center showcasing authentic handlooms, block prints, and quilts.",
         "is_verified": true,
-        "shopping_hub_id": "jaipur"
+        "shopping_hub_id": "jaipur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Rajasthali",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Jaipur Textile House",
@@ -797,7 +1032,13 @@
         "banner_image": "https://example.com/banners/jth-jai.png",
         "description": "Widely trusted boutique for wedding block prints and unstitched fabrics in Jaipur.",
         "is_verified": true,
-        "shopping_hub_id": "jaipur"
+        "shopping_hub_id": "jaipur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Jaipur%20Textile%20House",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Gulab Chand Prints",
@@ -818,7 +1059,13 @@
         "banner_image": "https://example.com/banners/gulab-jai.png",
         "description": "Legendary store at Bapu Bazaar carrying authentic Sanganeri handblock prints and summer cottons.",
         "is_verified": true,
-        "shopping_hub_id": "jaipur"
+        "shopping_hub_id": "jaipur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Gulab%20Chand%20Prints",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Jaipur Kurti Store",
@@ -839,7 +1086,13 @@
         "banner_image": "https://example.com/banners/kurti-jai.png",
         "description": "Providing trendy modern iterations of Rajasthani prints at highly competitive prices.",
         "is_verified": true,
-        "shopping_hub_id": "jaipur"
+        "shopping_hub_id": "jaipur",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Jaipur%20Kurti%20Store",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "V2 Retail",
@@ -860,7 +1113,13 @@
         "banner_image": "https://example.com/banners/v2-patna.png",
         "description": "Budget family shopping registry carrying everyday clothing packages.",
         "is_verified": true,
-        "shopping_hub_id": "patna"
+        "shopping_hub_id": "patna",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=V2%20Retail",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Pantaloons Patna",
@@ -881,7 +1140,13 @@
         "banner_image": "https://example.com/banners/panta-patna.png",
         "description": "Highly popular department store, serving contemporary designs and western apparel.",
         "is_verified": true,
-        "shopping_hub_id": "patna"
+        "shopping_hub_id": "patna",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Pantaloons%20Patna",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Patna Fashion Hub",
@@ -902,7 +1167,13 @@
         "banner_image": "https://example.com/banners/pfh-patna.png",
         "description": "Highly visited local dealer for kids multiwear and wedding kurtas inside Maurya Lok.",
         "is_verified": true,
-        "shopping_hub_id": "patna"
+        "shopping_hub_id": "patna",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Patna%20Fashion%20Hub",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     },
     {
         "name": "Bihar Ethnic Collections",
@@ -923,6 +1194,12 @@
         "banner_image": "https://example.com/banners/bihar-ethnic.png",
         "description": "Dedicated collections representing Bhagalpuri Tussar silks and hand-printed Madhubani sarees.",
         "is_verified": true,
-        "shopping_hub_id": "patna"
+        "shopping_hub_id": "patna",
+        "logo_image": "https://dummyimage.com/150x150/000/fff&text=Bihar%20Ethnic%20Collections",
+        "specialties": [
+            "Traditional Wear",
+            "Silk Collections",
+            "Family Fashion"
+        ]
     }
 ]

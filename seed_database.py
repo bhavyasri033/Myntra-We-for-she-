@@ -48,10 +48,14 @@ async def seed():
         client.close()
         return
         
+    # Clear existing stores collection to renew specialties & logo images
+    await db.stores.delete_many({})
+    print("Cleared existing stores collection.")
+
     with open(stores_path, "r", encoding="utf-8") as f:
         stores = json.load(f)
         
-    print(f"Loaded {len(stores)} stores.")
+    print(f"Loaded {len(stores)} stores to seed.")
     
     stores_inserted = 0
     stores_skipped = 0
@@ -67,9 +71,59 @@ async def seed():
         await db.stores.insert_one(store)
         stores_inserted += 1
         
+    # 3. Seed Products
+    products_path = os.path.join("seed", "products.json")
+    products_inserted = 0
+    products_skipped = 0
+    products_loaded = 0
+    
+    if os.path.exists(products_path):
+        # Drop existing products to ensure clean seed slate without validation errors
+        await db.products.delete_many({})
+        print("Cleared existing products collection.")
+        
+        with open(products_path, "r", encoding="utf-8") as f:
+            products = json.load(f)
+        
+        products_loaded = len(products)
+        print(f"Loaded {products_loaded} products to seed.")
+        
+        for p in products:
+            # Look up store ID dynamically
+            store_name = p.pop("store_name", None)
+            store_city = p.pop("store_city", None)
+            
+            store_doc = await db.stores.find_one({"name": store_name, "city": store_city})
+            if not store_doc:
+                print(f"Warning: Store '{store_name}' in '{store_city}' not found. Skipping product '{p['name']}'.")
+                products_skipped += 1
+                continue
+                
+            p["store_id"] = store_doc["_id"]
+            
+            # Check if this product already exists at this store
+            existing = await db.products.find_one({"name": p["name"], "store_id": p["store_id"]})
+            if existing:
+                products_skipped += 1
+                continue
+                
+            # Date parse
+            created_str = p.get("created_at")
+            if created_str:
+                p["created_at"] = datetime.fromisoformat(created_str.replace("Z", "+00:00"))
+            else:
+                p["created_at"] = datetime.utcnow()
+                
+            p["updated_at"] = datetime.utcnow()
+            await db.products.insert_one(p)
+            products_inserted += 1
+    else:
+        print("Warning: products.json seed file not found.")
+
     print("=================== Seeding Summary ===================")
     print(f"Shopping Hubs - Handled: {len(hubs)} | Inserted: {hubs_inserted} | Skipped: {hubs_skipped}")
     print(f"Stores        - Handled: {len(stores)} | Inserted: {stores_inserted} | Skipped: {stores_skipped}")
+    print(f"Products      - Handled: {products_loaded} | Inserted: {products_inserted} | Skipped: {products_skipped}")
     print("=======================================================")
     
     client.close()

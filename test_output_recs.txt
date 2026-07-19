@@ -76,7 +76,7 @@ Testing Endpoint: http://localhost:8000/products?category=saree ...
   SUCCESS!
   [Paginated List] total count metadata: 22
   [OK] Returned matches: 22
-  Matched categories for expansion: {'Wedding Sarees', 'Traditional Sarees', 'Cotton Sarees', 'Pure Silk Sarees', 'Pattu Sarees', 'Bridal Sarees', 'Gadwal Sarees', 'Designer Sarees', 'Sarees', 'Liril Sarees', 'Silk Sarees'}
+  Matched categories for expansion: {'Cotton Sarees', 'Liril Sarees', 'Gadwal Sarees', 'Traditional Sarees', 'Sarees', 'Pure Silk Sarees', 'Silk Sarees', 'Pattu Sarees', 'Designer Sarees', 'Wedding Sarees', 'Bridal Sarees'}
   [OK] Custom assertion passed.
   --------------------------------------
 Testing Endpoint: http://localhost:8000/products?occasion=Wedding ...
@@ -110,6 +110,25 @@ Testing Endpoint: http://localhost:8000/products/invalid_id (expecting 400)...
   SUCCESS! Got exception code 400 Bad Request.
   --------------------------------------
 Testing Endpoint: http://localhost:8000/products/60c72b2f9b1d8e1f5c6b4569 (expecting 404)...
+  SUCCESS! Got exception code 404 Not Found.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/p_0091/recommendations/similar ...
+  SUCCESS!
+  [OK] verified similar matches count: 10
+  [OK] first similar product recommendation reason: 'Same Sub-Category ò Same Occasion'
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/p_0091/recommendations/store ...
+  SUCCESS!
+  [OK] verified store matches count: 2
+  [OK] section title context: 'More Traditional Sarees from Prasiddhi Silks'
+  [OK] first store product recommendation reason: 'Popular in this store'
+  [OK] Custom assertion passed.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/invalid_id/recommendations/similar (expecting 400)...
+  SUCCESS! Got exception code 400 Bad Request.
+  --------------------------------------
+Testing Endpoint: http://localhost:8000/products/60c72b2f9b1d8e1f5c6b4569/recommendations/store (expecting 404)...
   SUCCESS! Got exception code 404 Not Found.
   --------------------------------------
 
