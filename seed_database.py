@@ -68,6 +68,10 @@ async def seed():
             
         store["created_at"] = datetime.utcnow()
         store["updated_at"] = datetime.utcnow()
+        store["delivery_available"] = store.get("delivery_available", True)
+        store["delivery_radius_km"] = store.get("delivery_radius_km", 15.0)
+        store["supported_states"] = store.get("supported_states", [])
+        store["supported_cities"] = store.get("supported_cities", [])
         await db.stores.insert_one(store)
         stores_inserted += 1
         

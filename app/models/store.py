@@ -20,6 +20,10 @@ class StoreDB(BaseModel):
     trust_score: float
     years_in_business: int
     is_verified: bool = False
+    delivery_available: bool = True
+    delivery_radius_km: float = 15.0
+    supported_states: List[str] = Field(default_factory=list)
+    supported_cities: List[str] = Field(default_factory=list)
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
 

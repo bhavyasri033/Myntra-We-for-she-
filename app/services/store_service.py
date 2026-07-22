@@ -259,3 +259,133 @@ class StoreService:
             store["final_score"] = round(final_score, 4)
 
         return StoreService.sort_stores(nearby)
+
+    @staticmethod
+    async def get_store_collections(store_id: str) -> List[Dict[str, Any]]:
+        """
+        Dynamically analyzes all products belonging to the selected store
+        and projects available shopping collections using MongoDB aggregation.
+        """
+        db = get_database()
+        
+        # Check store existence
+        store_match_id = store_id
+        if ObjectId.is_valid(store_id):
+            store = await db.stores.find_one({"_id": ObjectId(store_id)})
+            store_match_id = {"$in": [store_id, ObjectId(store_id)]}
+        else:
+            store = await db.stores.find_one({"_id": store_id})
+            
+        if not store:
+            return []
+
+        pipeline = [
+            {
+                "$match": {
+                    "store_id": store_match_id,
+                    "is_available": True,
+                    "occasion": {"$ne": None, "$ne": ""}
+                }
+            },
+            {
+                "$project": {
+                    "name": 1,
+                    "thumbnail": 1,
+                    "occasions_list": {"$split": ["$occasion", ", "]}
+                }
+            },
+            {
+                "$unwind": "$occasions_list"
+            },
+            {
+                "$group": {
+                    "_id": "$occasions_list",
+                    "product_count": {"$sum": 1},
+                    "cover_image": {"$first": "$thumbnail"}
+                }
+            },
+            {
+                "$match": {
+                    "_id": {"$ne": ""}
+                }
+            },
+            {
+                "$sort": {"product_count": -1, "_id": 1}
+            }
+        ]
+
+        cursor = db.products.aggregate(pipeline)
+        docs = await cursor.to_list(length=100)
+
+        desc_map = {
+            "Wedding": "Bridal and wedding fashion",
+            "Festival": "Festive outfits and celebration styles",
+            "Daily Wear": "Daily essentials and comfortable wear",
+            "Office Wear": "Office work and formal fashion",
+            "Casual": "Relaxed everyday casual collections",
+            "Party Wear": "High-style evening and party wear",
+            "Ethnic": "Traditional ethnic wear and motifs",
+            "Traditional": "Classic heritage traditional wear",
+            "Family Function": "Perfect attire for family get-togethers",
+            "College Wear": "Trendy casuals for campus wear",
+            "Travel": "Easy and stylish travel wear",
+            "Vacation": "Chic holiday and vacation outfits",
+            "Kids": "Cute and playful outfits for kids",
+            "Celebration": "Celebration and ceremony statements"
+        }
+
+        collections = []
+        for doc in docs:
+            name = doc["_id"]
+            collections.append({
+                "collection_name": name,
+                "product_count": doc["product_count"],
+                "cover_image": doc.get("cover_image"),
+                "description": desc_map.get(name, f"{name} Collection")
+            })
+            
+        return collections
+
+    @staticmethod
+    async def check_delivery_availability(store_id: str, address: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Verify deliverability of user address parameters relative to selected store.
+        Checks for store capability, state/city limits, and maximum distance constraint if coordinates are provided.
+        """
+        store = await StoreService.get_store_by_id(store_id)
+        if not store:
+            return {"deliverable": False, "reason": "Currently unavailable for your location."}
+            
+        # 1. Store capability check
+        if not store.get("delivery_available", True):
+            return {"deliverable": False, "reason": "Currently unavailable for your location."}
+            
+        # 2. State restriction checks
+        req_state = address.get("state")
+        spec_states = store.get("supported_states")
+        if req_state and spec_states:
+            normalized_states = [s.strip().lower() for s in spec_states if s]
+            if req_state.strip().lower() not in normalized_states:
+                return {"deliverable": False, "reason": "Currently unavailable for your location."}
+
+        # 3. City restriction checks
+        req_city = address.get("city")
+        spec_cities = store.get("supported_cities")
+        if req_city and spec_cities:
+            normalized_cities = [c.strip().lower() for c in spec_cities if c]
+            if req_city.strip().lower() not in normalized_cities:
+                return {"deliverable": False, "reason": "Currently unavailable for your location."}
+
+        # 4. Geodistance check if coordinates are provided
+        req_lat = address.get("latitude")
+        req_lon = address.get("longitude")
+        store_lat = store.get("latitude")
+        store_lon = store.get("longitude")
+        radius_limit = store.get("delivery_radius_km", 15.0)
+
+        if req_lat is not None and req_lon is not None and store_lat is not None and store_lon is not None:
+            dist = StoreService.haversine(req_lat, req_lon, store_lat, store_lon)
+            if dist > radius_limit:
+                return {"deliverable": False, "reason": "Currently unavailable for your location."}
+
+        return {"deliverable": True}

@@ -15,6 +15,8 @@ class Settings(BaseSettings):
     
     # Placeholder SECRET_KEY for Hackathon
     SECRET_KEY: str = "placeholder_secret_key"
+    ALGORITHM: str = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     
     # CORS Configuration
     ALLOWED_ORIGINS: Union[str, List[str]] = []

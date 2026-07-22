@@ -3,7 +3,8 @@ from fastapi import FastAPI, Response, status
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from database.database import connect_to_mongo, close_mongo_connection, db_instance
-from app.routers import stores, products, recommendations, orders, users, shopping_hubs, states
+from app.routers import stores, products, recommendations, orders, users, shopping_hubs, states, address
+from app.auth import router as auth
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -14,6 +15,8 @@ async def lifespan(app: FastAPI):
     yield
     # Shutdown actions
     print("Shutting down FastAPI application...")
+    from app.services.geocoding_service import GeocodingService
+    await GeocodingService.close()
     await close_mongo_connection()
     print("Shutdown complete. MongoDB Connection Closed.")
 
@@ -38,6 +41,7 @@ if settings.ALLOWED_ORIGINS:
     )
 
 # Register routers at root level to expose GET /stores/test etc.
+app.include_router(auth.router)
 app.include_router(stores.router)
 app.include_router(states.router)
 app.include_router(shopping_hubs.router)
@@ -45,19 +49,18 @@ app.include_router(products.router)
 app.include_router(recommendations.router)
 app.include_router(orders.router)
 app.include_router(users.router)
+app.include_router(address.router)
 
 @app.get("/")
 @app.get("/health", tags=["health"])
 async def health_check(response: Response):
-    """
-    Health check endpoint to verify backend status and MongoDB connectivity.
-    """
     database_status = "disconnected"
+    db_name = "None"
     if db_instance.client is not None:
         try:
-            # Quick ping to verify connectivity
             await db_instance.client.admin.command('ping')
             database_status = "connected"
+            db_name = db_instance.db.name if db_instance.db is not None else "None"
         except Exception:
             database_status = "disconnected"
 
@@ -68,11 +71,13 @@ async def health_check(response: Response):
         return {
             "status": "degraded",
             "database": database_status,
+            "db_name": db_name,
             "version": "1.0"
         }
 
     return {
         "status": "running",
         "database": database_status,
+        "db_name": db_name,
         "version": "1.0"
     }

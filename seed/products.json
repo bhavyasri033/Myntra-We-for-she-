@@ -7,7 +7,7 @@
         "discount_price": 5999.0,
         "brand": "South India Shopping Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Wedding, Festival, Traditional",
         "material": "Silk",
         "sizes": [
             {
@@ -50,7 +50,7 @@
             "Fabric": "Pure Silk",
             "Care Instructions": "Dry wash recommended",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Wedding, Festival, Traditional"
         }
     },
     {
@@ -61,7 +61,7 @@
         "discount_price": 6880.0,
         "brand": "South India Shopping Mall",
         "gender": "Women",
-        "occasion": "Festival Wear",
+        "occasion": "Wedding, Festival, Party Wear",
         "material": "Organza",
         "sizes": [
             {
@@ -113,7 +113,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Organza",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Wedding, Festival, Party Wear"
         }
     },
     {
@@ -124,7 +125,7 @@
         "discount_price": 2399.0,
         "brand": "South India Shopping Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -180,7 +181,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -191,7 +193,7 @@
         "discount_price": 2399.0,
         "brand": "RS Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -246,7 +248,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -257,7 +259,7 @@
         "discount_price": 1399.0,
         "brand": "RS Brothers",
         "gender": "Kids",
-        "occasion": "Festival Wear",
+        "occasion": "Kids, Celebration, Festival",
         "material": "Silk Blend",
         "sizes": [
             {
@@ -309,7 +311,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Silk Blend",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Kids, Celebration, Festival"
         }
     },
     {
@@ -320,7 +323,7 @@
         "discount_price": 2399.0,
         "brand": "RS Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -376,7 +379,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -387,7 +391,7 @@
         "discount_price": 2399.0,
         "brand": "Chandana Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -442,7 +446,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -453,7 +457,7 @@
         "discount_price": 2199.0,
         "brand": "Chandana Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -505,7 +509,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -516,7 +521,7 @@
         "discount_price": 3599.0,
         "brand": "Chandana Brothers",
         "gender": "Women",
-        "occasion": "Festival Wear",
+        "occasion": "Casual",
         "material": "Chanderi Silk",
         "sizes": [
             {
@@ -568,7 +573,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Chanderi Silk",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -579,7 +585,7 @@
         "discount_price": 2399.0,
         "brand": "KLM Fashion Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -635,7 +641,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -646,7 +653,7 @@
         "discount_price": 6880.0,
         "brand": "KLM Fashion Mall",
         "gender": "Women",
-        "occasion": "Festival Wear",
+        "occasion": "Wedding, Festival, Party Wear",
         "material": "Organza",
         "sizes": [
             {
@@ -698,7 +705,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Organza",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Wedding, Festival, Party Wear"
         }
     },
     {
@@ -709,7 +717,7 @@
         "discount_price": 2399.0,
         "brand": "KLM Fashion Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual, Daily Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -765,7 +773,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual, Daily Wear"
         }
     },
     {
@@ -776,7 +785,7 @@
         "discount_price": 2399.0,
         "brand": "Kalanjali",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -832,7 +841,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -843,7 +853,7 @@
         "discount_price": 2199.0,
         "brand": "Kalanjali",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -895,7 +905,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -906,7 +917,7 @@
         "discount_price": 2399.0,
         "brand": "Kalanjali",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -962,7 +973,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -973,7 +985,7 @@
         "discount_price": 5999.0,
         "brand": "CMR Heritage",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Wedding, Festival, Traditional",
         "material": "Silk",
         "sizes": [
             {
@@ -1016,7 +1028,7 @@
             "Fabric": "Pure Silk",
             "Care Instructions": "Dry wash recommended",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Wedding, Festival, Traditional"
         }
     },
     {
@@ -1027,7 +1039,7 @@
         "discount_price": 2199.0,
         "brand": "CMR Heritage",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -1079,7 +1091,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1090,7 +1103,7 @@
         "discount_price": 2399.0,
         "brand": "CMR Heritage",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -1146,7 +1159,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1157,7 +1171,7 @@
         "discount_price": 2399.0,
         "brand": "Kalanikethan",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -1212,7 +1226,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -1223,7 +1237,7 @@
         "discount_price": 2199.0,
         "brand": "Kalanikethan",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Party Wear, Festival, Ethnic",
         "material": "Georgette",
         "sizes": [
             {
@@ -1274,7 +1288,7 @@
             "Fabric": "Pure Georgette",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Party Wear, Festival, Ethnic"
         }
     },
     {
@@ -1285,7 +1299,7 @@
         "discount_price": 2399.0,
         "brand": "Kalanikethan",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -1341,7 +1355,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1352,7 +1367,7 @@
         "discount_price": 2399.0,
         "brand": "Sri Vasavi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -1408,7 +1423,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1419,7 +1435,7 @@
         "discount_price": 2199.0,
         "brand": "Sri Vasavi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Party Wear, Festival, Ethnic",
         "material": "Georgette",
         "sizes": [
             {
@@ -1470,7 +1486,7 @@
             "Fabric": "Pure Georgette",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Party Wear, Festival, Ethnic"
         }
     },
     {
@@ -1481,7 +1497,7 @@
         "discount_price": 2399.0,
         "brand": "Sri Vasavi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -1537,7 +1553,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1548,7 +1565,7 @@
         "discount_price": 2399.0,
         "brand": "Padmavathi Shopping Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -1604,7 +1621,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1615,7 +1633,7 @@
         "discount_price": 2199.0,
         "brand": "Padmavathi Shopping Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -1667,7 +1685,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1678,7 +1697,7 @@
         "discount_price": 17999.0,
         "brand": "Padmavathi Shopping Mall",
         "gender": "Men",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Brocade Silk",
         "sizes": [
             {
@@ -1730,7 +1749,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Brocade Silk",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1741,7 +1761,7 @@
         "discount_price": 2399.0,
         "brand": "Sri Lakshmi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -1797,7 +1817,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1808,7 +1829,7 @@
         "discount_price": 2199.0,
         "brand": "Sri Lakshmi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -1860,7 +1881,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -1871,7 +1893,7 @@
         "discount_price": 2399.0,
         "brand": "Sri Lakshmi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual, Daily Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -1927,7 +1949,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual, Daily Wear"
         }
     },
     {
@@ -1938,7 +1961,7 @@
         "discount_price": 1399.0,
         "brand": "Vastra Trends",
         "gender": "Women",
-        "occasion": "Casual",
+        "occasion": "Festival, Family Function, Ethnic",
         "material": "Rayon",
         "sizes": [
             {
@@ -1994,7 +2017,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Rayon",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Festival, Family Function, Ethnic"
         }
     },
     {
@@ -2005,7 +2029,7 @@
         "discount_price": 2199.0,
         "brand": "Vastra Trends",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -2057,7 +2081,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2068,7 +2093,7 @@
         "discount_price": 2399.0,
         "brand": "Vastra Trends",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -2123,7 +2148,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -2134,7 +2159,7 @@
         "discount_price": 2399.0,
         "brand": "Venkateswara Textiles",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -2190,7 +2215,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2201,7 +2227,7 @@
         "discount_price": 2199.0,
         "brand": "Venkateswara Textiles",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -2253,7 +2279,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2264,7 +2291,7 @@
         "discount_price": 2399.0,
         "brand": "Venkateswara Textiles",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -2320,7 +2347,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2331,7 +2359,7 @@
         "discount_price": 2399.0,
         "brand": "CMR Shopping Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -2386,7 +2414,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -2397,7 +2425,7 @@
         "discount_price": 2199.0,
         "brand": "CMR Shopping Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -2449,7 +2477,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2460,7 +2489,7 @@
         "discount_price": 2399.0,
         "brand": "CMR Shopping Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -2516,7 +2545,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2527,7 +2557,7 @@
         "discount_price": 2399.0,
         "brand": "KLM Fashion Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual, Daily Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -2583,7 +2613,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual, Daily Wear"
         }
     },
     {
@@ -2594,7 +2625,7 @@
         "discount_price": 4999.0,
         "brand": "KLM Fashion Mall",
         "gender": "Women",
-        "occasion": "Festival Wear",
+        "occasion": "Wedding, Festival, Traditional",
         "material": "Georgette",
         "sizes": [
             {
@@ -2637,7 +2668,7 @@
             "Fabric": "Pure Georgette",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Festival Wear"
+            "Occasion": "Wedding, Festival, Traditional"
         }
     },
     {
@@ -2648,7 +2679,7 @@
         "discount_price": 2399.0,
         "brand": "KLM Fashion Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -2704,7 +2735,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2715,7 +2747,7 @@
         "discount_price": 2399.0,
         "brand": "Chandana Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -2770,7 +2802,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -2781,7 +2813,7 @@
         "discount_price": 2199.0,
         "brand": "Chandana Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -2833,7 +2865,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2844,7 +2877,7 @@
         "discount_price": 1290.0,
         "brand": "Chandana Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Silk",
         "sizes": [
             {
@@ -2888,7 +2921,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Silk",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2899,7 +2933,7 @@
         "discount_price": 2399.0,
         "brand": "Sri Krishna Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -2955,7 +2989,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -2966,7 +3001,7 @@
         "discount_price": 2199.0,
         "brand": "Sri Krishna Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Party Wear, Festival, Ethnic",
         "material": "Georgette",
         "sizes": [
             {
@@ -3017,7 +3052,7 @@
             "Fabric": "Pure Georgette",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Party Wear, Festival, Ethnic"
         }
     },
     {
@@ -3028,7 +3063,7 @@
         "discount_price": 2399.0,
         "brand": "Sri Krishna Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -3084,7 +3119,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -3095,7 +3131,7 @@
         "discount_price": 14999.0,
         "brand": "CMR Central",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Wedding, Festival, Party Wear",
         "material": "Velvet",
         "sizes": [
             {
@@ -3147,7 +3183,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Velvet",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Wedding, Festival, Party Wear"
         }
     },
     {
@@ -3158,7 +3195,7 @@
         "discount_price": 4999.0,
         "brand": "CMR Central",
         "gender": "Women",
-        "occasion": "Festival Wear",
+        "occasion": "Wedding, Festival, Traditional",
         "material": "Georgette",
         "sizes": [
             {
@@ -3201,7 +3238,7 @@
             "Fabric": "Pure Georgette",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Festival Wear"
+            "Occasion": "Wedding, Festival, Traditional"
         }
     },
     {
@@ -3212,7 +3249,7 @@
         "discount_price": 2399.0,
         "brand": "CMR Central",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -3268,7 +3305,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -3279,7 +3317,7 @@
         "discount_price": 2399.0,
         "brand": "KLM Fashion Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -3334,7 +3372,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -3345,7 +3383,7 @@
         "discount_price": 2199.0,
         "brand": "KLM Fashion Mall",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -3397,7 +3435,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -3408,7 +3447,7 @@
         "discount_price": 899.0,
         "brand": "KLM Fashion Mall",
         "gender": "Kids",
-        "occasion": "Casual",
+        "occasion": "Kids, Celebration, Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -3460,7 +3499,8 @@
             "Neck": "Mandarin Collar",
             "Fit": "Comfort Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Soft Hand Wash"
+            "Care Instructions": "Soft Hand Wash",
+            "Occasion": "Kids, Celebration, Casual"
         }
     },
     {
@@ -3471,7 +3511,7 @@
         "discount_price": 2399.0,
         "brand": "Varma Textiles",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -3527,7 +3567,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -3538,7 +3579,7 @@
         "discount_price": 2199.0,
         "brand": "Varma Textiles",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual, College Wear",
         "material": "Georgette",
         "sizes": [
             {
@@ -3590,7 +3631,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual, College Wear"
         }
     },
     {
@@ -3601,7 +3643,7 @@
         "discount_price": 2399.0,
         "brand": "Varma Textiles",
         "gender": "Women",
-        "occasion": "Casual",
+        "occasion": "Festival, Ethnic, Traditional",
         "material": "Linen",
         "sizes": [
             {
@@ -3644,7 +3686,7 @@
             "Fabric": "Pure Linen",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Casual"
+            "Occasion": "Festival, Ethnic, Traditional"
         }
     },
     {
@@ -3655,7 +3697,7 @@
         "discount_price": 2399.0,
         "brand": "Chandana Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -3710,7 +3752,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -3721,7 +3763,7 @@
         "discount_price": 2199.0,
         "brand": "Chandana Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -3773,7 +3815,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -3784,7 +3827,7 @@
         "discount_price": 2399.0,
         "brand": "Chandana Brothers",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -3840,7 +3883,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -3851,7 +3895,7 @@
         "discount_price": 2399.0,
         "brand": "The Chennai Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -3907,7 +3951,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -3918,7 +3963,7 @@
         "discount_price": 2199.0,
         "brand": "The Chennai Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -3970,7 +4015,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -3981,7 +4027,7 @@
         "discount_price": 2399.0,
         "brand": "The Chennai Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -4037,7 +4083,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4048,7 +4095,7 @@
         "discount_price": 2399.0,
         "brand": "Pothys",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -4104,7 +4151,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4115,7 +4163,7 @@
         "discount_price": 2199.0,
         "brand": "Pothys",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -4167,7 +4215,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4178,7 +4227,7 @@
         "discount_price": 2399.0,
         "brand": "Pothys",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -4233,7 +4282,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -4244,7 +4293,7 @@
         "discount_price": 2399.0,
         "brand": "RMKV",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -4299,7 +4348,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -4310,7 +4359,7 @@
         "discount_price": 2199.0,
         "brand": "RMKV",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -4362,7 +4411,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4373,7 +4423,7 @@
         "discount_price": 2399.0,
         "brand": "RMKV",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -4429,7 +4479,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4440,7 +4491,7 @@
         "discount_price": 2399.0,
         "brand": "Sri Kumaran Fashion",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -4496,7 +4547,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4507,7 +4559,7 @@
         "discount_price": 999.0,
         "brand": "Sri Kumaran Fashion",
         "gender": "Women",
-        "occasion": "Formal",
+        "occasion": "Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -4563,7 +4615,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Office Wear"
         }
     },
     {
@@ -4574,7 +4627,7 @@
         "discount_price": 3599.0,
         "brand": "Sri Kumaran Fashion",
         "gender": "Women",
-        "occasion": "Festival Wear",
+        "occasion": "Casual",
         "material": "Chanderi Silk",
         "sizes": [
             {
@@ -4626,7 +4679,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Chanderi Silk",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4637,7 +4691,7 @@
         "discount_price": 2399.0,
         "brand": "Seematti",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Daily Wear, Office Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -4692,7 +4746,7 @@
             "Fabric": "Pure Cotton",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Daily Wear, Office Wear"
         }
     },
     {
@@ -4703,7 +4757,7 @@
         "discount_price": 2199.0,
         "brand": "Seematti",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -4755,7 +4809,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4766,7 +4821,7 @@
         "discount_price": 2399.0,
         "brand": "Seematti",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -4822,7 +4877,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4833,7 +4889,7 @@
         "discount_price": 2399.0,
         "brand": "Jayalakshmi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Wedding, Festival, Party Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -4889,7 +4945,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Wedding, Festival, Party Wear"
         }
     },
     {
@@ -4900,7 +4957,7 @@
         "discount_price": 2199.0,
         "brand": "Jayalakshmi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -4952,7 +5009,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -4963,7 +5021,7 @@
         "discount_price": 2399.0,
         "brand": "Jayalakshmi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5019,7 +5077,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5030,7 +5089,7 @@
         "discount_price": 2399.0,
         "brand": "Pothys",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5086,7 +5145,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5097,7 +5157,7 @@
         "discount_price": 2199.0,
         "brand": "Pothys",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -5149,7 +5209,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5160,7 +5221,7 @@
         "discount_price": 2399.0,
         "brand": "Pothys",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5216,7 +5277,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5227,7 +5289,7 @@
         "discount_price": 2399.0,
         "brand": "Milan Design",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5283,7 +5345,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5294,7 +5357,7 @@
         "discount_price": 2199.0,
         "brand": "Milan Design",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -5346,7 +5409,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5357,7 +5421,7 @@
         "discount_price": 2399.0,
         "brand": "Milan Design",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5413,7 +5477,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5424,7 +5489,7 @@
         "discount_price": 2399.0,
         "brand": "Mysore Saree Udyog",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5480,7 +5545,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5491,7 +5557,7 @@
         "discount_price": 2199.0,
         "brand": "Mysore Saree Udyog",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -5543,7 +5609,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5554,7 +5621,7 @@
         "discount_price": 2399.0,
         "brand": "Mysore Saree Udyog",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5610,7 +5677,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5621,7 +5689,7 @@
         "discount_price": 2399.0,
         "brand": "KSIC Silk Showroom",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5677,7 +5745,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5688,7 +5757,7 @@
         "discount_price": 2199.0,
         "brand": "KSIC Silk Showroom",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -5740,7 +5809,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5751,7 +5821,7 @@
         "discount_price": 2399.0,
         "brand": "KSIC Silk Showroom",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5807,7 +5877,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -5818,7 +5889,7 @@
         "discount_price": 5999.0,
         "brand": "Prasiddhi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Wedding, Festival, Traditional",
         "material": "Silk",
         "sizes": [
             {
@@ -5861,7 +5932,7 @@
             "Fabric": "Pure Silk",
             "Care Instructions": "Dry wash recommended",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Wedding, Festival, Traditional"
         }
     },
     {
@@ -5872,7 +5943,7 @@
         "discount_price": 2199.0,
         "brand": "Prasiddhi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Festival, Family Function, Ethnic",
         "material": "Georgette",
         "sizes": [
             {
@@ -5924,7 +5995,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Festival, Family Function, Ethnic"
         }
     },
     {
@@ -5935,7 +6007,7 @@
         "discount_price": 2399.0,
         "brand": "Prasiddhi Silks",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -5991,7 +6063,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -6002,7 +6075,7 @@
         "discount_price": 2399.0,
         "brand": "Kayes Fashion",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -6058,7 +6131,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -6069,7 +6143,7 @@
         "discount_price": 2800.0,
         "brand": "Kayes Fashion",
         "gender": "Men",
-        "occasion": "Casual",
+        "occasion": "Casual, Daily Wear, College Wear",
         "material": "Denim",
         "sizes": [
             {
@@ -6120,7 +6194,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Denim",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Casual, Daily Wear, College Wear"
         }
     },
     {
@@ -6131,7 +6206,7 @@
         "discount_price": 2399.0,
         "brand": "Kayes Fashion",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -6187,7 +6262,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -6198,7 +6274,7 @@
         "discount_price": 14999.0,
         "brand": "Dhantoli Fashion House",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Wedding, Festival, Party Wear",
         "material": "Velvet",
         "sizes": [
             {
@@ -6250,7 +6326,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Velvet",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Wedding, Festival, Party Wear"
         }
     },
     {
@@ -6261,7 +6338,7 @@
         "discount_price": 2199.0,
         "brand": "Dhantoli Fashion House",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Festival, Family Function, Ethnic",
         "material": "Georgette",
         "sizes": [
             {
@@ -6313,7 +6390,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Festival, Family Function, Ethnic"
         }
     },
     {
@@ -6324,7 +6402,7 @@
         "discount_price": 2399.0,
         "brand": "Dhantoli Fashion House",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -6380,7 +6458,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -6391,7 +6470,7 @@
         "discount_price": 2399.0,
         "brand": "Arvind Store",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual, Daily Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -6447,7 +6526,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual, Daily Wear"
         }
     },
     {
@@ -6458,7 +6538,7 @@
         "discount_price": 2199.0,
         "brand": "Arvind Store",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual, College Wear",
         "material": "Georgette",
         "sizes": [
             {
@@ -6510,7 +6590,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual, College Wear"
         }
     },
     {
@@ -6521,7 +6602,7 @@
         "discount_price": 2399.0,
         "brand": "Arvind Store",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -6577,7 +6658,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -6588,7 +6670,7 @@
         "discount_price": 2399.0,
         "brand": "Cotton County",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -6644,7 +6726,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -6655,7 +6738,7 @@
         "discount_price": 2800.0,
         "brand": "Cotton County",
         "gender": "Men",
-        "occasion": "Casual",
+        "occasion": "Casual, Daily Wear, College Wear",
         "material": "Denim",
         "sizes": [
             {
@@ -6706,7 +6789,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Denim",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Casual, Daily Wear, College Wear"
         }
     },
     {
@@ -6717,7 +6801,7 @@
         "discount_price": 999.0,
         "brand": "Cotton County",
         "gender": "Men",
-        "occasion": "Casual",
+        "occasion": "Casual, College Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -6782,7 +6866,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Casual, College Wear"
         }
     },
     {
@@ -6793,7 +6878,7 @@
         "discount_price": 2399.0,
         "brand": "Vastram",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual, Daily Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -6849,7 +6934,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual, Daily Wear"
         }
     },
     {
@@ -6860,7 +6946,7 @@
         "discount_price": 2199.0,
         "brand": "Vastram",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Party Wear, Festival, Ethnic",
         "material": "Georgette",
         "sizes": [
             {
@@ -6911,7 +6997,7 @@
             "Fabric": "Pure Georgette",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Ethnic Wear"
+            "Occasion": "Party Wear, Festival, Ethnic"
         }
     },
     {
@@ -6922,7 +7008,7 @@
         "discount_price": 2399.0,
         "brand": "Vastram",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -6978,7 +7064,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -6989,7 +7076,7 @@
         "discount_price": 2399.0,
         "brand": "Rajasthali",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -7045,7 +7132,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7056,7 +7144,7 @@
         "discount_price": 2199.0,
         "brand": "Rajasthali",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -7108,7 +7196,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7119,7 +7208,7 @@
         "discount_price": 2399.0,
         "brand": "Rajasthali",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -7175,7 +7264,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7186,7 +7276,7 @@
         "discount_price": 14999.0,
         "brand": "Jaipur Textile House",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Wedding, Festival, Party Wear",
         "material": "Velvet",
         "sizes": [
             {
@@ -7238,7 +7328,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Velvet",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Wedding, Festival, Party Wear"
         }
     },
     {
@@ -7249,7 +7340,7 @@
         "discount_price": 2199.0,
         "brand": "Jaipur Textile House",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -7301,7 +7392,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7312,7 +7404,7 @@
         "discount_price": 2399.0,
         "brand": "Jaipur Textile House",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -7368,7 +7460,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7379,7 +7472,7 @@
         "discount_price": 2399.0,
         "brand": "Gulab Chand Prints",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -7435,7 +7528,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7446,7 +7540,7 @@
         "discount_price": 2199.0,
         "brand": "Gulab Chand Prints",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Festival, Family Function, Ethnic",
         "material": "Georgette",
         "sizes": [
             {
@@ -7498,7 +7592,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Festival, Family Function, Ethnic"
         }
     },
     {
@@ -7509,7 +7604,7 @@
         "discount_price": 2399.0,
         "brand": "Gulab Chand Prints",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -7565,7 +7660,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7576,7 +7672,7 @@
         "discount_price": 1399.0,
         "brand": "Jaipur Kurti Store",
         "gender": "Women",
-        "occasion": "Casual",
+        "occasion": "Festival, Family Function, Ethnic",
         "material": "Rayon",
         "sizes": [
             {
@@ -7632,7 +7728,8 @@
             "Neck": "Round Neck",
             "Fit": "Regular Fit",
             "Fabric": "Rayon",
-            "Care Instructions": "Machine wash"
+            "Care Instructions": "Machine wash",
+            "Occasion": "Festival, Family Function, Ethnic"
         }
     },
     {
@@ -7643,7 +7740,7 @@
         "discount_price": 2199.0,
         "brand": "Jaipur Kurti Store",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -7695,7 +7792,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7706,7 +7804,7 @@
         "discount_price": 2399.0,
         "brand": "Jaipur Kurti Store",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual, Daily Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -7762,7 +7860,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual, Daily Wear"
         }
     },
     {
@@ -7773,7 +7872,7 @@
         "discount_price": 2399.0,
         "brand": "V2 Retail",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -7829,7 +7928,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7840,7 +7940,7 @@
         "discount_price": 2199.0,
         "brand": "V2 Retail",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -7892,7 +7992,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7903,7 +8004,7 @@
         "discount_price": 2399.0,
         "brand": "V2 Retail",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -7959,7 +8060,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -7970,7 +8072,7 @@
         "discount_price": 2399.0,
         "brand": "Pantaloons Patna",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -8026,7 +8128,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -8037,7 +8140,7 @@
         "discount_price": 2199.0,
         "brand": "Pantaloons Patna",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -8089,7 +8192,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -8100,7 +8204,7 @@
         "discount_price": 2399.0,
         "brand": "Pantaloons Patna",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -8156,7 +8260,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -8167,7 +8272,7 @@
         "discount_price": 899.0,
         "brand": "Patna Fashion Hub",
         "gender": "Kids",
-        "occasion": "Casual",
+        "occasion": "Kids, Celebration, Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -8219,7 +8324,8 @@
             "Neck": "Mandarin Collar",
             "Fit": "Comfort Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Soft Hand Wash"
+            "Care Instructions": "Soft Hand Wash",
+            "Occasion": "Kids, Celebration, Casual"
         }
     },
     {
@@ -8230,7 +8336,7 @@
         "discount_price": 4999.0,
         "brand": "Patna Fashion Hub",
         "gender": "Women",
-        "occasion": "Festival Wear",
+        "occasion": "Wedding, Festival, Traditional",
         "material": "Georgette",
         "sizes": [
             {
@@ -8273,7 +8379,7 @@
             "Fabric": "Pure Georgette",
             "Care Instructions": "Mild hand wash",
             "Length": "5.5 meters",
-            "Occasion": "Festival Wear"
+            "Occasion": "Wedding, Festival, Traditional"
         }
     },
     {
@@ -8284,7 +8390,7 @@
         "discount_price": 2399.0,
         "brand": "Patna Fashion Hub",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual, Daily Wear",
         "material": "Cotton",
         "sizes": [
             {
@@ -8340,7 +8446,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual, Daily Wear"
         }
     },
     {
@@ -8351,7 +8458,7 @@
         "discount_price": 2399.0,
         "brand": "Bihar Ethnic Collections",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -8407,7 +8514,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -8418,7 +8526,7 @@
         "discount_price": 2199.0,
         "brand": "Bihar Ethnic Collections",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Georgette",
         "sizes": [
             {
@@ -8470,7 +8578,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Georgette",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     },
     {
@@ -8481,7 +8590,7 @@
         "discount_price": 2399.0,
         "brand": "Bihar Ethnic Collections",
         "gender": "Women",
-        "occasion": "Ethnic Wear",
+        "occasion": "Casual",
         "material": "Cotton",
         "sizes": [
             {
@@ -8537,7 +8646,8 @@
             "Neck": "Collar Neck",
             "Fit": "Regular / Straight Fit",
             "Fabric": "Cotton",
-            "Care Instructions": "Gentle Machine Wash"
+            "Care Instructions": "Gentle Machine Wash",
+            "Occasion": "Casual"
         }
     }
 ]

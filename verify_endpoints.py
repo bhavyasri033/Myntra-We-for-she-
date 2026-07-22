@@ -99,8 +99,8 @@ if __name__ == "__main__":
     test_endpoint(
         "http://localhost:8000/shopping-hubs/hyd/stores",
         expected_min_count=5,
-        check_keys_present=["_id", "name", "shopping_hub_id"],
-        check_keys_absent=["trust_score", "google_rating", "review_count"]
+        check_keys_present=["_id", "name", "trust_score", "logo_image", "specialties"],
+        check_keys_absent=["shopping_hub_id", "google_rating", "review_count"]
     )
     
     # Fetch a real store ID dynamically to run products module tests
@@ -458,7 +458,193 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"  CRITICAL ERROR: Got unexpected error: {e}")
         sys.exit(1)
+    # Test 25: GET /stores/{storeId}/collections
+    def assert_store_collections(data):
+        if not isinstance(data, list):
+            print("  CRITICAL ERROR: Store collections response is not a list!")
+            sys.exit(1)
+        if len(data) == 0:
+            print("  CRITICAL ERROR: Store collections response is empty!")
+            sys.exit(1)
+            
+        col = data[0]
+        keys = ["collection_name", "product_count", "cover_image", "description"]
+        for k in keys:
+            if k not in col:
+                print(f"  CRITICAL ERROR: Store collection item missing key: '{k}'")
+                sys.exit(1)
+                
+        print(f"  [OK] verified collections count: {len(data)}")
+        print(f"  [OK] first collection: name='{col['collection_name']}', count={col['product_count']}")
+
+    test_endpoint(
+        f"http://localhost:8000/stores/{target_store_unique_id}/collections",
+        custom_assert=assert_store_collections
+    )
+
+    # Test 26: GET /stores/{nonExistentId}/collections (expect 404 Not Found)
+    print(f"Testing Endpoint: http://localhost:8000/stores/{non_existent}/collections (expecting 404)...")
+    try:
+        req = urllib.request.Request(f"http://localhost:8000/stores/{non_existent}/collections", headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as resp:
+            print("  CRITICAL ERROR: Expected 404 Not Found, but request succeeded!")
+            sys.exit(1)
+    except urllib.error.HTTPError as he:
+        if he.code == 404:
+            print("  SUCCESS! Got exception code 404 Not Found.")
+        else:
+            print(f"  CRITICAL ERROR: Expected HTTP 404, got {he.code}!")
+            sys.exit(1)
+    except Exception as e:
+        print(f"  CRITICAL ERROR: Got unexpected error: {e}")
+        sys.exit(1)
+    # Test 27: POST /stores/{storeId}/check-delivery (expect deliverable: true for close coordinates)
+    print(f"Testing Endpoint: http://localhost:8000/stores/{target_store_unique_id}/check-delivery (matching delivery area)...")
+    try:
+        url = f"http://localhost:8000/stores/{target_store_unique_id}/check-delivery"
+        req_body = json.dumps({
+            "state": "Telangana",
+            "city": "Hyderabad",
+            "latitude": 17.385,
+            "longitude": 78.486
+        }).encode('utf-8')
+        req = urllib.request.Request(url, data=req_body, headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as resp:
+            data = json.loads(resp.read().decode())
+            if not data.get("deliverable"):
+                print(f"  CRITICAL ERROR: Expected deliverable true, got {data}!")
+                sys.exit(1)
+            print("  SUCCESS! Store is deliverable to user coordinates.")
+    except Exception as e:
+        print(f"  CRITICAL ERROR: Got unexpected error: {e}")
+        sys.exit(1)
     print("  --------------------------------------")
+
+    # Test 28: POST /stores/{storeId}/check-delivery (expect deliverable: false for far coordinates/Bengaluru)
+    print(f"Testing Endpoint: http://localhost:8000/stores/{target_store_unique_id}/check-delivery (exceeding radius)...")
+    try:
+        url = f"http://localhost:8000/stores/{target_store_unique_id}/check-delivery"
+        req_body = json.dumps({
+            "state": "Karnataka",
+            "city": "Bengaluru",
+            "latitude": 12.9716,
+            "longitude": 77.5946
+        }).encode('utf-8')
+        req = urllib.request.Request(url, data=req_body, headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as resp:
+            data = json.loads(resp.read().decode())
+            if data.get("deliverable") or "unavailable" not in data.get("reason", "").lower():
+                print(f"  CRITICAL ERROR: Expected deliverable false with unavailable reason, got {data}!")
+                sys.exit(1)
+            print(f"  SUCCESS! Deliverable is false. Reason: '{data['reason']}'")
+    except Exception as e:
+        print(f"  CRITICAL ERROR: Got unexpected error: {e}")
+        sys.exit(1)
+    print("  --------------------------------------")
+
+    # Test 29: POST /stores/{nonExistentId}/check-delivery (expect 404 Not Found)
+    print(f"Testing Endpoint: http://localhost:8000/stores/{non_existent}/check-delivery (expecting 404)...")
+    try:
+        url = f"http://localhost:8000/stores/{non_existent}/check-delivery"
+        req_body = json.dumps({
+            "state": "Telangana",
+            "city": "Hyderabad",
+            "latitude": 17.385,
+            "longitude": 78.486
+        }).encode('utf-8')
+        req = urllib.request.Request(url, data=req_body, headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as resp:
+            print("  CRITICAL ERROR: Expected 404 Not Found, but request succeeded!")
+            sys.exit(1)
+    except urllib.error.HTTPError as he:
+        if he.code == 404:
+            print("  SUCCESS! Got exception code 404 Not Found.")
+        else:
+            print(f"  CRITICAL ERROR: Expected HTTP 404, got {he.code}!")
+            sys.exit(1)
+    except Exception as e:
+        print(f"  CRITICAL ERROR: Got unexpected error: {e}")
+        sys.exit(1)
+    print("  --------------------------------------")
+
+    # Test 30: GET /stores (StoreCardResponse check)
+    def assert_store_card_response(data):
+        if not isinstance(data, list) or len(data) == 0:
+            print("  CRITICAL ERROR: GET /stores did not return a populated list!")
+            sys.exit(1)
+        store = data[0]
+        present_keys = ["_id", "name", "city", "state", "logo_image", "trust_score", "categories", "specialties", "years_in_business", "is_verified"]
+        absent_keys = ["banner_image", "shopping_hub_id", "shopping_hub", "google_rating", "review_count"]
+        for k in present_keys:
+            if k not in store:
+                print(f"  CRITICAL ERROR: StoreCardResponse missing required key '{k}'!")
+                sys.exit(1)
+        for k in absent_keys:
+            if k in store:
+                print(f"  CRITICAL ERROR: StoreCardResponse exposes restricted key '{k}'!")
+                sys.exit(1)
+        print("  SUCCESS! StoreCardResponse contains all expected fields and removes restricted ones.")
+
+    test_endpoint(
+        "http://localhost:8000/stores",
+        expected_min_count=5,
+        custom_assert=assert_store_card_response
+    )
+
+    # Test 31: GET /stores/search
+    test_endpoint(
+        f"http://localhost:8000/stores/search?query={urllib.parse.quote(target_store_name)}",
+        expected_min_count=1,
+        custom_assert=assert_store_card_response
+    )
+
+    # Test 32: GET /stores/nearby
+    def assert_nearby_store_response(data):
+        if not isinstance(data, list) or len(data) == 0:
+            print("  CRITICAL ERROR: GET /stores/nearby did not return stores!")
+            sys.exit(1)
+        store = data[0]
+        present_keys = ["_id", "name", "city", "state", "logo_image", "trust_score", "categories", "specialties", "years_in_business", "is_verified", "distance_km"]
+        absent_keys = ["banner_image", "shopping_hub_id", "shopping_hub", "google_rating", "review_count"]
+        for k in present_keys:
+            if k not in store:
+                print(f"  CRITICAL ERROR: NearbyStoreResponse missing key '{k}'!")
+                sys.exit(1)
+        for k in absent_keys:
+            if k in store:
+                print(f"  CRITICAL ERROR: NearbyStoreResponse exposes restricted key '{k}'!")
+                sys.exit(1)
+        print("  SUCCESS! NearbyStoreResponse verified correctly.")
+
+    test_endpoint(
+        "http://localhost:8000/stores/nearby?latitude=17.385&longitude=78.486&radius=50",
+        expected_min_count=1,
+        custom_assert=assert_nearby_store_response
+    )
+
+    # Test 33: GET /stores/{id} (StoreDetailsResponse check)
+    def assert_store_details_response(data):
+        present_keys = [
+            "_id", "name", "city", "state", "logo_image", "banner_image", "trust_score", 
+            "categories", "specialties", "years_in_business", "is_verified", "description", 
+            "address", "latitude", "longitude", "delivery_available", "delivery_radius_km", 
+            "supported_states", "supported_cities"
+        ]
+        absent_keys = ["shopping_hub_id", "shopping_hub", "google_rating", "review_count"]
+        for k in present_keys:
+            if k not in data:
+                print(f"  CRITICAL ERROR: StoreDetailsResponse missing required key '{k}'!")
+                sys.exit(1)
+        for k in absent_keys:
+            if k in data:
+                print(f"  CRITICAL ERROR: StoreDetailsResponse exposes restricted key '{k}'!")
+                sys.exit(1)
+        print("  SUCCESS! StoreDetailsResponse verified successfully.")
+
+    test_endpoint(
+        f"http://localhost:8000/stores/{target_store_unique_id}",
+        custom_assert=assert_store_details_response
+    )
 
     print("\nALL REFACTORED SEARCH ENGINE, EXPANSION, AND PRODUCT DETAILS VERIFICATIONS PASSED SUCCESSFULLY!")
 

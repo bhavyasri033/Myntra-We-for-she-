@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Query, status
 from typing import List, Optional, Union
-from app.schemas.store import StoreResponse, StoreNearbyResponse, StoreDetailsResponse
+from app.schemas.store import StoreResponse, StoreNearbyResponse, StoreDetailsResponse, StoreCollectionResponse, UserDeliveryAddressRequest, DeliveryAvailabilityResponse
 from app.schemas.product import ProductCardResponse
 from app.services.store_service import StoreService
 from app.services.product_service import ProductService
@@ -71,6 +71,34 @@ async def get_store_products(
         available=available,
         sort=sort
     )
+
+@router.get("/{storeId}/collections", response_model=List[StoreCollectionResponse], status_code=status.HTTP_200_OK)
+async def get_store_collections(storeId: str):
+    """
+    Get dynamically generated shopping collections for the specified Store ID.
+    """
+    # Verify store exists
+    store = await StoreService.get_store_by_id(storeId)
+    if not store:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Store not found with id {storeId}"
+        )
+    return await StoreService.get_store_collections(storeId)
+
+@router.post("/{storeId}/check-delivery", response_model=DeliveryAvailabilityResponse, status_code=status.HTTP_200_OK)
+async def check_store_delivery(storeId: str, address: UserDeliveryAddressRequest):
+    """
+    Validate deliverability of user address parameters relative to selected store.
+    """
+    store = await StoreService.get_store_by_id(storeId)
+    if not store:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Store not found with id {storeId}"
+        )
+    result = await StoreService.check_delivery_availability(storeId, address.model_dump())
+    return result
 
 
 
