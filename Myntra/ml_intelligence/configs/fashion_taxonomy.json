@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "categories": [
+    "Family Shopping",
+    "Women's Fashion",
+    "Men's Fashion",
+    "Kids Fashion",
+    "Bridal Silk",
+    "Handloom Heritage",
+    "Ethnic & Festive",
+    "Designer & Boutique",
+    "Casual & Everyday"
+  ],
+  "specializations": [
+    "Sarees",
+    "Silk",
+    "Bridal Wear",
+    "Handloom",
+    "Kurtis",
+    "Sherwanis",
+    "Pattu",
+    "Banarasi",
+    "Kanjeevaram",
+    "Chanderi",
+    "Maheshwari",
+    "Kids Wear",
+    "Lehenga",
+    "Wedding Wear",
+    "Festival Wear"
+  ],
+  "target_genders": [
+    "Women",
+    "Men",
+    "Kids",
+    "Unisex"
+  ],
+  "target_occasions": [
+    "Wedding",
+    "Festival",
+    "Casual",
+    "Party",
+    "Formal"
+  ]
+}

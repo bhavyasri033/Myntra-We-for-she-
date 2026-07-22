@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "aspect_rules": {
+    "is_legacy": ["legacy", "trusted", "famous", "household name", "popular", "iconic", "renowned", "established", "prominent", "reputed", "landmark"],
+    "is_authentic": ["authentic", "genuine", "pure", "certified", "handwoven", "original", "traditional", "heritage"],
+    "is_handloom": ["handloom", "weaver", "chanderi", "maheshwari", "kanjeevaram", "banarasi", "pattu", "looms"],
+    "is_bridal": ["bridal", "wedding", "lehenga", "heavy saree", "bridalwear", "dulhan"],
+    "is_government": ["government", "cooperative", "society", "handloom house", "khadi", "state outlet", "apex"],
+    "is_family_shopping": ["family shopping", "family destination", "family store", "multi-floor", "multi-brand"],
+    "is_festival": ["festival", "festive", "diwali", "pongal", "onam", "pooja", "festive wear"],
+    "price_segment_rules": {
+      "Budget": ["budget-friendly", "affordable", "wholesale", "low price", "discount"],
+      "Mid-Premium": ["popular", "trusted", "family shopping", "wide range"],
+      "Luxury": ["haute", "designer", "exclusive", "luxury", "boutique", "custom"]
+    }
+  }
+}

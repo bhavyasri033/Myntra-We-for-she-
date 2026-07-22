@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 2,
+      "number_of_replicas": 1,
+      "knn": true,
+      "knn.algo_param.ef_search": 100
+    },
+    "analysis": {
+      "analyzer": {
+        "brand_analyzer": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "asciifolding"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "store_id": { "type": "keyword" },
+      "canonical_name": { "type": "text", "analyzer": "brand_analyzer" },
+      "brand_name": { 
+        "type": "text", 
+        "analyzer": "brand_analyzer",
+        "fields": {
+          "raw": { "type": "keyword" }
+        }
+      },
+      "branch_name": { "type": "keyword" },
+      "city": { "type": "keyword" },
+      "state": { "type": "keyword" },
+      "zone": { "type": "keyword" },
+      "location": { "type": "geo_point" },
+      "categories": { "type": "keyword" },
+      "specializations": { "type": "keyword" },
+      "search_tags": { "type": "keyword" },
+      "why_found": { "type": "text", "analyzer": "english" },
+      "source_found": { "type": "keyword" },
+      "extracted_aspects": { "type": "keyword" },
+      "trust_score": { "type": "rank_feature" },
+      "ovi_score": { "type": "rank_feature" },
+      "reputation_score": { "type": "float" },
+      "verifiability_score": { "type": "float" },
+      "trust_badge": { "type": "keyword" },
+      "store_embedding": {
+        "type": "dense_vector",
+        "dims": 384,
+        "index": true,
+        "similarity": "cosine",
+        "index_options": {
+          "type": "hnsw",
+          "m": 16,
+          "ef_construction": 200
+        }
+      },
+      "updated_at": { "type": "date" }
+    }
+  }
+}
