@@ -36,6 +36,7 @@ export const AppRoutes = () => {
         <Route path={ROUTES.STATE_DETAILS} element={<StateDetailsPage />} />
         <Route path={ROUTES.HUB_DETAILS} element={<HubDetailsPage />} />
         <Route path={ROUTES.STORE_DETAILS} element={<StoreDetailsPage />} />
+        <Route path={ROUTES.STORE_COLLECTIONS} element={<CollectionsPage />} />
         <Route path={ROUTES.COLLECTIONS} element={<CollectionsPage />} />
         <Route path={ROUTES.PRODUCT_DETAILS} element={<ProductDetailsPage />} />
         <Route path={ROUTES.SHORTLIST} element={<ShortlistPage />} />

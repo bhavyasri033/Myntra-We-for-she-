@@ -6,7 +6,7 @@ import SectionHeader from '../common/SectionHeader';
  * Essential product specifications presented using elegant cards instead of tables.
  */
 export const Specifications = ({ specifications = [] }) => {
-  if (!specifications || specifications.length === 0) return null;
+  if (!specifications || !Array.isArray(specifications) || specifications.length === 0) return null;
 
   return (
     <div className="space-y-6">

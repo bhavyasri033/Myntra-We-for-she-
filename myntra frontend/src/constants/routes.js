@@ -9,6 +9,7 @@ export const ROUTES = {
   STATE_DETAILS: '/state/:stateId',
   HUB_DETAILS: '/hub/:hubId',
   STORE_DETAILS: '/store/:storeId',
+  STORE_COLLECTIONS: '/store/:storeId/collections',
   COLLECTIONS: '/collections/:storeId',
   PRODUCT_DETAILS: '/product/:productId',
   SHORTLIST: '/shortlist',
@@ -17,7 +18,7 @@ export const ROUTES = {
 
 export const getHubDetailsPath = (hubId) => `/hub/${hubId}`;
 export const getStoreDetailsPath = (storeId) => `/store/${storeId}`;
-export const getCollectionsPath = (storeId) => `/collections/${storeId}`;
+export const getCollectionsPath = (storeId) => `/store/${storeId}/collections`;
 export const getProductDetailsPath = (productId) => `/product/${productId}`;
 export const getStateDetailsPath = (stateId) => `/state/${stateId}`;
 

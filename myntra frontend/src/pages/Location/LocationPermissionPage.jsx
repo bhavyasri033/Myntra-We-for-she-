@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { MapPin, Navigation, Compass } from 'lucide-react';
+import { Navigation, Compass, AlertCircle, Loader2 } from 'lucide-react';
 import PageContainer from '../../components/layout/PageContainer';
 import LocationCard from '../../components/location/LocationCard';
 import LocationIllustration from '../../components/location/LocationIllustration';
@@ -12,17 +12,23 @@ import { LocationContext } from '../../context/LocationContext';
 
 /**
  * LocationPermissionPage Component (Route: /location-permission)
- * Onboarding screen prompting user to choose between auto-location discovery or manual city selection.
+ * Prompts user to grant location access or pick a city manually.
+ * Connects directly to browser Geolocation API and POST /address/reverse-geocode.
  */
 export const LocationPermissionPage = () => {
   const navigate = useNavigate();
-  const { requestCurrentLocation } = useContext(LocationContext);
+  const { requestCurrentLocation, loading, error } = useContext(LocationContext);
 
   const handleUseCurrentLocation = () => {
-    // Trigger mock location request and navigate to loading screen
-    requestCurrentLocation(() => {
-      navigate(ROUTES.LOCATING);
-    });
+    requestCurrentLocation(
+      () => {
+        // On successful location resolution, navigate to Locating loading screen
+        navigate(ROUTES.LOCATING);
+      },
+      (errMessage) => {
+        console.warn('[LocationPermissionPage] Geolocation error:', errMessage);
+      }
+    );
   };
 
   const handleChooseCity = () => {
@@ -44,24 +50,38 @@ export const LocationPermissionPage = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xs sm:text-sm text-text-muted font-normal max-w-md mx-auto leading-relaxed mb-8">
+          <p className="text-xs sm:text-sm text-text-muted font-normal max-w-md mx-auto leading-relaxed mb-6">
             Allow location access to discover trusted regional fashion stores, iconic shopping hubs, and authentic collections around you.
           </p>
+
+          {/* Error Banner Callout (Permission Denied / Geolocation Unavailable) */}
+          {error && (
+            <motion.div
+              initial={{ opacity: 0, y: -6 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mb-6 p-3.5 rounded-2xl bg-red-500/10 border border-red-500/30 text-xs font-medium text-red-500 flex items-center gap-2 text-left"
+            >
+              <AlertCircle className="w-4 h-4 shrink-0" />
+              <span>{error}</span>
+            </motion.div>
+          )}
 
           {/* Actions */}
           <div className="space-y-3 max-w-sm mx-auto">
             <LocationButton
               onClick={handleUseCurrentLocation}
               variant="primary"
-              icon={Navigation}
+              icon={loading ? Loader2 : Navigation}
+              disabled={loading}
             >
-              Use Current Location
+              {loading ? 'Detecting Location...' : 'Use Current Location'}
             </LocationButton>
 
             <LocationButton
               onClick={handleChooseCity}
               variant="secondary"
               icon={Compass}
+              disabled={loading}
             >
               Choose City Instead
             </LocationButton>

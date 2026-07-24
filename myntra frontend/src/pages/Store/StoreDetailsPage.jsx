@@ -1,169 +1,201 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-// Sub-components Imports
+// Component Imports
 import PageContainer from '../../components/layout/PageContainer';
 import StoreHero from '../../components/store/StoreHero';
-import StoreStory from '../../components/store/StoreStory';
-import HeritageTimeline from '../../components/store/HeritageTimeline';
-import HeritageMetrics from '../../components/store/HeritageMetrics';
-import TrustSection from '../../components/store/TrustSection';
-import RegionalSpecialties from '../../components/store/RegionalSpecialties';
-import RegionalHeritageBanner from '../../components/store/RegionalHeritageBanner';
 import FeaturedCollections from '../../components/store/FeaturedCollections';
 import SignatureProducts from '../../components/store/SignatureProducts';
-import StoreGallery from '../../components/store/StoreGallery';
-import StoreInformation from '../../components/store/StoreInformation';
-import CustomerMoments from '../../components/store/CustomerMoments';
-import NearbyStores from '../../components/store/NearbyStores';
 import StickyActionBar from '../../components/store/StickyActionBar';
+import LoadingSpinner from '../../components/common/LoadingSpinner';
+import ErrorState from '../../components/common/ErrorState';
 
-// Data Provider
+// Service & Fallback Imports
+import storeService from '../../services/storeService';
 import { getStoreData } from '../../data/mockStores';
 
 /**
  * StoreDetailsPage Component (Route: /store/:storeId)
- * Award-winning digital storytelling experience for regional fashion destinations.
+ * Integrated with FastAPI Backend:
+ * 1. GET /stores/{storeId} (Store Profile Hero)
+ * 2. GET /stores/{storeId}/collections (Collections)
+ * 3. GET /stores/{storeId}/products?sort=rating (Featured Products)
  */
 export const StoreDetailsPage = () => {
   const { storeId } = useParams();
-  const store = getStoreData(storeId);
 
-  // Scroll to top on store ID change
+  const [storeData, setStoreData] = useState(null);
+  const [collections, setCollections] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Scroll to top and fetch store profile, collections & products
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    fetchStoreData();
   }, [storeId]);
+
+  const fetchStoreData = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+
+      // 1. Fetch store profile from GET /stores/{storeId}
+      const apiStore = await storeService.getStoreById(storeId);
+      const staticFallback = getStoreData(storeId) || {};
+
+      // Format Store Hero properties
+      const formattedStore = {
+        id: apiStore._id || apiStore.id || storeId,
+        name: apiStore.name,
+        city: apiStore.city,
+        state: apiStore.state,
+        logoImage: apiStore.logo_image || staticFallback.logoImage || 'https://dummyimage.com/150x150/000/fff&text=Store',
+        heroBanner: apiStore.banner_image || staticFallback.heroBanner || 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&q=80&w=1200',
+        bannerImage: apiStore.banner_image,
+        tagline: apiStore.description || `${apiStore.name} is a trusted regional fashion store in ${apiStore.city}, ${apiStore.state}.`,
+        description: apiStore.description,
+        trustScore: apiStore.trust_score,
+        yearsInBusiness: apiStore.years_in_business,
+        trustedSince: apiStore.years_in_business ? `${new Date().getFullYear() - apiStore.years_in_business}` : '1968',
+        isVerified: apiStore.is_verified ?? true,
+        badgeText: apiStore.is_verified ? 'Verified Regional Icon' : 'Regional Retailer',
+        categories: apiStore.categories || [],
+        specialties: apiStore.specialties || [],
+        address: apiStore.address || `${apiStore.city}, ${apiStore.state}`,
+        latitude: apiStore.latitude,
+        longitude: apiStore.longitude,
+        deliveryAvailable: apiStore.delivery_available ?? true,
+        deliveryRadiusKm: apiStore.delivery_radius_km || 15.0,
+        supportedStates: apiStore.supported_states || [],
+        supportedCities: apiStore.supported_cities || [],
+        hubName: apiStore.city,
+        hubId: apiStore.city ? apiStore.city.toLowerCase() : 'hyd',
+      };
+
+      setStoreData(formattedStore);
+
+      // 2. Fetch Collections and Featured Products in parallel
+      try {
+        const [collectionsRes, productsRes] = await Promise.all([
+          storeService.getStoreCollections(storeId),
+          storeService.getStoreProducts(storeId, { sort: 'rating' }),
+        ]);
+
+        // Transform backend StoreCollectionResponse: cover_image, collection_name, product_count, description
+        const formattedCollections = (collectionsRes || []).map((col, idx) => ({
+          id: col.collection_name ? col.collection_name.toLowerCase().replace(/\s+/g, '-') : `col-${idx}`,
+          title: col.collection_name,
+          collection_name: col.collection_name,
+          itemCount: col.product_count,
+          product_count: col.product_count,
+          coverImage: col.cover_image || 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800',
+          cover_image: col.cover_image,
+          description: col.description,
+          tag: `${col.product_count} ${col.product_count === 1 ? 'Piece' : 'Pieces'}`,
+        }));
+
+        // Transform backend ProductCardResponse: thumbnail, product name, price, discount, rating
+        const formattedProducts = (productsRes || []).map((p) => {
+          const mainImg = p.thumbnail || p.image || 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800';
+          const pPrice = p.discount_price ?? p.price;
+          const origPrice = p.price && p.discount_price && p.price > p.discount_price ? p.price : null;
+          const discPct = p.discount_percentage ? `${Math.round(p.discount_percentage)}% OFF` : null;
+
+          return {
+            id: p.id || p._id,
+            name: p.name,
+            thumbnail: mainImg,
+            image: mainImg,
+            price: `₹${pPrice.toLocaleString('en-IN')}`,
+            originalPrice: origPrice ? `₹${origPrice.toLocaleString('en-IN')}` : null,
+            discount: discPct,
+            rating: p.rating || 4.5,
+            category: p.category,
+            regionalBadge: p.category || 'Handloom Heritage',
+            giTag: 'GI Certified',
+            artisanTag: p.brand || 'Local Master Weavers',
+          };
+        });
+
+        setCollections(formattedCollections);
+        setProducts(formattedProducts);
+      } catch (childErr) {
+        console.warn('[StoreDetailsPage] Error fetching collections or products:', childErr);
+      }
+    } catch (err) {
+      console.error(`[StoreDetailsPage] Failed to fetch store profile for ID '${storeId}':`, err);
+      setError(err.message || `Failed to load store profile for ID '${storeId}'. Please try again.`);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <PageContainer maxWidth="max-w-7xl" padding="px-4 sm:px-6 lg:px-8 py-16">
+        <div className="py-20 flex justify-center">
+          <LoadingSpinner size="lg" message="Loading store profile, collections & products..." />
+        </div>
+      </PageContainer>
+    );
+  }
+
+  if (error || !storeData) {
+    return (
+      <PageContainer maxWidth="max-w-7xl" padding="px-4 sm:px-6 lg:px-8 py-16">
+        <ErrorState
+          title="Store Profile Not Found"
+          message={error || `Could not find store details for ID '${storeId}'.`}
+          onRetry={fetchStoreData}
+        />
+      </PageContainer>
+    );
+  }
 
   return (
     <PageContainer maxWidth="max-w-7xl" padding="px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-24 md:pb-28">
       <div className="space-y-16 sm:space-y-20 md:space-y-24">
         
-        {/* 1. Hero Section (Clickable Shopping Hub) */}
+        {/* SECTION 1: Store Hero (Preserved unchanged) */}
         <motion.section
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
         >
-          <StoreHero store={store} />
+          <StoreHero store={storeData} />
         </motion.section>
 
-        {/* 2. Our Story & Heritage Timeline */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="space-y-16"
-        >
-          <StoreStory story={store.story} />
-          <HeritageTimeline timeline={store.timeline} />
-        </motion.section>
+        {/* SECTION 2: Collections (GET /stores/{storeId}/collections) */}
+        {collections.length > 0 && (
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          >
+            <FeaturedCollections collections={collections} />
+          </motion.section>
+        )}
 
-        {/* 3. Heritage Metrics */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <HeritageMetrics metrics={store.metrics} />
-        </motion.section>
-
-        {/* 4. Why Shoppers Trust This Store */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <TrustSection trustHighlights={store.trustHighlights} />
-        </motion.section>
-
-        {/* 5. Regional Specialties */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <RegionalSpecialties specialties={store.specialties} />
-        </motion.section>
-
-        {/* 6. Regional Heritage Banner */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <RegionalHeritageBanner banner={store.heritageBanner} />
-        </motion.section>
-
-        {/* 7. Featured Collections */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <FeaturedCollections collections={store.collections} />
-        </motion.section>
-
-        {/* 8. Signature Products */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <SignatureProducts products={store.signatureProducts} />
-        </motion.section>
-
-        {/* 9. Store Experience Gallery */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <StoreGallery gallery={store.gallery} />
-        </motion.section>
-
-        {/* 10. Location Experience */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <StoreInformation location={store.location} information={store.information} />
-        </motion.section>
-
-        {/* 11. Customer Moments */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <CustomerMoments moments={store.customerMoments} />
-        </motion.section>
-
-        {/* 12. Continue Your Heritage Journey */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <NearbyStores nearbyStores={store.nearbyStores} />
-        </motion.section>
+        {/* SECTION 3: Featured Products (GET /stores/{storeId}/products?sort=rating) */}
+        {products.length > 0 && (
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          >
+            <SignatureProducts products={products} />
+          </motion.section>
+        )}
 
       </div>
 
       {/* Sticky Action Bar */}
-      <StickyActionBar store={store} />
+      <StickyActionBar store={storeData} />
     </PageContainer>
   );
 };
